@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "title": "hope this works",
+      "post": "blah blah blah...",
+      "userId": "106827563549481231909",
+      "id": 1
+    },
+    {
+      "title": "notation",
+      "author": "tai tai",
+      "post": "Accessing Properties on an Object\nThere are two ways to access properties on an object:\nDot Notation\nBracket Notation\nDot notation is used most frequently. Below we’ll dive into each and discover some of the differences.\nDot Notation\nLets first look at Dot notation. Consider this example below:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj.cat;\nconsole.log(sound);\n// meow\nI want to bring your attention to the fifth line where we’re using dot notation: let sound = obj.cat;. This is an example of dot notation. You can access properties on an object by specifying the name of the object, followed by a dot (period) followed by the property name. This is the syntax: objectName.propertyName;.\nWhen working with dot notation, property identifies can only be alphanumeric (and _ and $). Properties can’t start with a number.\nDot notation is much easier to read than bracket notation and is therefor used more often. However, there’s a second way to access properties on an object you should be aware of. It’s called bracket notation.\nBracket Notation\nHere’s an example of bracket notation:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj['cat'];\nconsole.log(sound);\n// meow\nAgain, draw your attention to the fifth line: let sound = obj[‘cat’];. You can access properties on an object by specifying the name of the object followed by the property name in brackets. Here’s the syntax: objectName[\"propertyName\"].\nYou’ve probably seen bracket notation when working with Arrays. In the below example we’ll access the second element in our arr by using the syntax: arrayName[element]\nlet arr = ['a','b','c'];\nlet letter = arr[1];\nconsole.log(letter);\n// b\nBut bracket notation is also useful when working with Objects.",
+      "userId": "106827563549481231909",
+      "id": 2
+    },
+    {
+      "title": "blah",
+      "author": "tim",
+      "post": "yay",
+      "userId": "106827563549481231909",
+      "id": 3
+    },
+    {
+      "title": "hope",
+      "author": "saul",
+      "post": "testimony...",
+      "userId": "106827563549481231909",
+      "id": 4
+    }
+  ],
+  "comments": [],
+  "profile": {}
+}

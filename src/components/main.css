@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	background-color: #2C2C29;
+	height: 0px;
+	color: white;
+	
+}
+
+.logo {
+	margin: 195px auto;
+	font-family: Oldtown, fantasy;
+	font-size: 80px;
+}
+
+.googleButton {
+	margin: 20px 15px;
+}
+
+.blog-logo {
+	font-family: Oldtown, fantasy;
+	margin: 10px 0;
+}
+
+
+.color {
+	color: white;
+}
+
+.post-form {
+	margin: 5px auto;
+}
+
+.submit-button {
+	display: flex;
+	margin: 0 auto;
+}
+
+
