@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { signIn, signOut } from '../actions';
 import { GrGoogle } from 'react-icons/gr';
 import Home from './Home';
+import history from '../history';
+
 
 
 
@@ -36,6 +38,7 @@ class GoogleAuth extends React.Component {
 
   	onSignOutClick = () => {
     	this.auth.signOut();
+    	history.push('/');
   	};
 
 	renderAuthButton() {

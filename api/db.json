@@ -1,31 +1,44 @@
 {
   "posts": [
     {
-      "title": "hope this works",
+      "title": "hi",
+      "author": "tim",
+      "description": "work",
       "post": "blah blah blah...",
       "userId": "106827563549481231909",
       "id": 1
     },
     {
-      "title": "notation",
-      "author": "tai tai",
-      "post": "Accessing Properties on an Object\nThere are two ways to access properties on an object:\nDot Notation\nBracket Notation\nDot notation is used most frequently. Below we’ll dive into each and discover some of the differences.\nDot Notation\nLets first look at Dot notation. Consider this example below:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj.cat;\nconsole.log(sound);\n// meow\nI want to bring your attention to the fifth line where we’re using dot notation: let sound = obj.cat;. This is an example of dot notation. You can access properties on an object by specifying the name of the object, followed by a dot (period) followed by the property name. This is the syntax: objectName.propertyName;.\nWhen working with dot notation, property identifies can only be alphanumeric (and _ and $). Properties can’t start with a number.\nDot notation is much easier to read than bracket notation and is therefor used more often. However, there’s a second way to access properties on an object you should be aware of. It’s called bracket notation.\nBracket Notation\nHere’s an example of bracket notation:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj['cat'];\nconsole.log(sound);\n// meow\nAgain, draw your attention to the fifth line: let sound = obj[‘cat’];. You can access properties on an object by specifying the name of the object followed by the property name in brackets. Here’s the syntax: objectName[\"propertyName\"].\nYou’ve probably seen bracket notation when working with Arrays. In the below example we’ll access the second element in our arr by using the syntax: arrayName[element]\nlet arr = ['a','b','c'];\nlet letter = arr[1];\nconsole.log(letter);\n// b\nBut bracket notation is also useful when working with Objects.",
+      "title": "the",
+      "author": "the",
+      "description": "While it’s not exactly square, recall that in Big O, we’re not interested in the details. So we drop the constants and multiply the terms with a result of n^2.",
+      "post": "the",
       "userId": "106827563549481231909",
       "id": 2
     },
     {
-      "title": "blah",
-      "author": "tim",
-      "post": "yay",
+      "title": "well",
+      "author": "well",
+      "description": "While it’s not exactly square, recall that in Big O, we’re not interested in the details. ",
+      "post": "blah blah",
       "userId": "106827563549481231909",
       "id": 3
     },
     {
-      "title": "hope",
-      "author": "saul",
-      "post": "testimony...",
+      "title": "the big notation. data structure and algorithms. traditional",
+      "author": "the",
+      "description": "While it’s not exactly square, recall that in Big O, we’re not interested in the details.",
+      "post": "blah b...",
       "userId": "106827563549481231909",
       "id": 4
+    },
+    {
+      "title": "JavaScript Quickie— Dot Notation vs. Bracket Notation",
+      "author": "Brad",
+      "description": "What’s the difference? When is each useful? Learn the details in 3 minutes",
+      "post": "Accessing Properties on an Object\nThere are two ways to access properties on an object:\nDot Notation\nBracket Notation\nDot notation is used most frequently. Below we’ll dive into each and discover some of the differences.\nDot Notation\nLets first look at Dot notation. Consider this example below:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj.cat;\nconsole.log(sound);\n// meow\nI want to bring your attention to the fifth line where we’re using dot notation: let sound = obj.cat;. This is an example of dot notation. You can access properties on an object by specifying the name of the object, followed by a dot (period) followed by the property name. This is the syntax: objectName.propertyName;.\nWhen working with dot notation, property identifies can only be alphanumeric (and _ and $). Properties can’t start with a number.\nDot notation is much easier to read than bracket notation and is therefor used more often. However, there’s a second way to access properties on an object you should be aware of. It’s called bracket notation.\nBracket Notation\nHere’s an example of bracket notation:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj['cat'];\nconsole.log(sound);\n// meow\nAgain, draw your attention to the fifth line: let sound = obj[‘cat’];. You can access properties on an object by specifying the name of the object followed by the property name in brackets. Here’s the syntax: objectName[\"propertyName\"].\nYou’ve probably seen bracket notation when working with Arrays. In the below example we’ll access the second element in our arr by using the syntax: arrayName[element]\nlet arr = ['a','b','c'];\nlet letter = arr[1];\nconsole.log(letter);\n// b\nBut bracket notation is also useful when working with Objects.\nWhen working with bracket notation, property identifiers only have to be a String. They can include any characters, including spaces. Variables may also be used as long as the variable resolves to a String.\nThis means there are fewer limitations when working with bracket notation. We can now have spaces in our strings, and can even start strings with numbers.\nPerhaps most importantly, we can now use variables to access properties in an object. It’s important the variable you are using references a String.\nTake a look at this variable example. It might be a little confusing at first, so bear with me:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet dog = 'cat';\nlet sound = obj[dog];\nconsole.log(sound);\n// meow\nThe above example is similar to a previous example we’ve already seen. The main difference is we’re now using bracket notation to pass in a variable. Be careful, it may look like we are looking for the dog property in our obj, but that’s not entire correct. dog is a variable with a value of 'cat'. Since we’re using brackets, the string value is passed in and we search for the 'cat' property — obj[\"cat\"]. Thus, meow is logged to the console.\nBelow, we’ll try doing the same thing, but with dot notation:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet dog = 'cat';\nlet sound = obj.dog;\nconsole.log(sound);\n// woof\nRight off the bat you should notice that we’re getting back woof. This is very different from the other example and it’s because we can’t use variables with dot notation. Attempting to lookup obj.dog will actually just look for the string value of 'dog' within our object instead of using the variables value. Thus, obj.dog returns woof.",
+      "userId": "106827563549481231909",
+      "id": 5
     }
   ],
   "comments": [],

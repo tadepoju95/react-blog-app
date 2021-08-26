@@ -40,4 +40,20 @@ body, html {
 	margin: 0 auto;
 }
 
+.card-post {
+	color: black;
+	display: inline-block;
+	margin: 20px 10px;
+}
+
+.post-content {
+	line-height: 2.0;
+	text-align: justify;
+	margin: 15px 0;
+}
+
+.post {
+	text-align: center;
+}
+
 

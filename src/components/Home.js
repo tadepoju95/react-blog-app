@@ -5,8 +5,9 @@ import { Form, Button } from 'react-bootstrap'
 import { createPost } from '../actions';
 
 
+
 class Home extends React.Component {
-	state = { title:"", author: "", post: ""}
+	state = { title:"", author: "", description: "", post: ""}
 
 	renderlogo() {
 		if(!this.props.isSignedIn) {
@@ -14,9 +15,11 @@ class Home extends React.Component {
 		}
 	}
 
-	handleFormSubmit = (title, author, post) => {
-		this.props.createPost(this.state.title, this.state.author, this.state.post);
-		this.setState({ title:"", post: ""});
+	handleFormSubmit = (title, author, description, post) => {
+		if(this.state.title !== "" && this.state.author !== "" && this.state.description !== "" && this.state.post !== "") {
+			this.props.createPost(this.state.title, this.state.author, this.state.description, this.state.post);
+			this.setState({ title:"", author:"", description:"", post: ""});
+		}
 	};
 
 	renderForm() {
@@ -25,11 +28,13 @@ class Home extends React.Component {
 				<Form>
   					<Form.Group className="w-75 p-3 post-form" controlId="exampleForm.ControlInput1">
     					<Form.Label>Title:</Form.Label>
-    					<Form.Control type="email" value={this.state.title} onChange={(e) => this.setState({ title: e.target.value})}/>
+    					<Form.Control type="text" value={this.state.title} onChange={(e) => this.setState({ title: e.target.value})} />
     					<Form.Label>Name:</Form.Label>
-    					<Form.Control type="email" value={this.state.author} onChange={(e) => this.setState({ author: e.target.value})}/>
+    					<Form.Control type="text" value={this.state.author} onChange={(e) => this.setState({ author: e.target.value})} />
+    					<Form.Label>Description:</Form.Label>
+    					<Form.Control type="text" value={this.state.description} onChange={(e) => this.setState({ description: e.target.value})} />
     					<Form.Label>Body:</Form.Label>
-    					<Form.Control as="textarea" placeholder="What's on your mind..." rows={11} value={this.state.post} onChange={(e) => this.setState({ post: e.target.value})}/>
+    					<Form.Control as="textarea" placeholder="What's on your mind..." rows={11} value={this.state.post} onChange={(e) => this.setState({ post: e.target.value})}  />
   					</Form.Group>
   					<Button variant="outline-secondary" className="submit-button" onClick={() => this.handleFormSubmit()}>Post</Button>
 				</Form>
