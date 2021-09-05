@@ -17,7 +17,7 @@ class ListOfPosts extends React.Component {
 		if (this.props.isSignedIn) {
 		return this.props.posts.map((eachPost, index) => {
 			return (
-				<Link to={`/post/${eachPost.id}`} key={index}>
+				<Link to={`/post/${eachPost.id}`} key={eachPost.id}>
 					<Card border="dark" style={{ width: '18rem' }} className="card-post">
 	   					<Card.Body>
 	      					<Card.Title>{eachPost.title}</Card.Title>

@@ -19,7 +19,7 @@ class ListOfComments extends React.Component {
 			return window.location.href === eachComment.url
 		}).map((eachComment, index) => {
 			return (
-				<div key={index}>
+				<div key={eachComment.id}>
 					<FaRegUserCircle className="user-icon" /><span className="user-name">{eachComment.userName}</span>
 					<p className="user-comment">{eachComment.comment}</p>
 					<p className="user-time">{eachComment.time}</p>
