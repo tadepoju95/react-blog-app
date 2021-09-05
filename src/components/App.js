@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Home';
 import Header from './Header';
 import { Router, Route} from 'react-router-dom';
-import ListOfPosts from './ListOfPosts';
+import ListOfPosts from './posts/ListOfPosts';
 import history from '../history';
-import Post from './Post';
+import Post from './posts/Post';
 
 
 const App = () => {

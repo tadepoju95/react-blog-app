@@ -1,5 +1,5 @@
 import React from 'react';
-import { createComment } from '../actions';
+import { createComment } from '../../actions';
 import { connect } from 'react-redux';
 import { Container, Button, InputGroup, FormControl } from 'react-bootstrap'
 import ListOfComments from './ListOfComments';
@@ -34,7 +34,6 @@ class CommentSection extends React.Component {
 }
 
 	render() {
-		console.log(this.props);
 		return (
 			<div>
 				<div>{this.renderList()}</div>
@@ -44,7 +43,7 @@ class CommentSection extends React.Component {
 }
 
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
 	return { 
 		isSignedIn: state.auth.isSignedIn,
 	 };

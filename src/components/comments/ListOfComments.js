@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchComments } from '../actions';
+import { fetchComments } from '../../actions';
 import { connect } from 'react-redux';
 import { Container, Card } from 'react-bootstrap'
 import { FaRegUserCircle } from 'react-icons/fa';
@@ -19,7 +19,7 @@ class ListOfComments extends React.Component {
 			return window.location.href === eachComment.url
 		}).map((eachComment, index) => {
 			return (
-				<div>
+				<div key={index}>
 					<FaRegUserCircle className="user-icon" /><span className="user-name">{eachComment.userName}</span>
 					<p className="user-comment">{eachComment.comment}</p>
 					<p className="user-time">{eachComment.time}</p>

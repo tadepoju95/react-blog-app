@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchPosts } from '../actions';
+import { fetchPosts } from '../../actions';
 import { connect } from 'react-redux';
 import { Container, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom';

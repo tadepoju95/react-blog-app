@@ -1,8 +1,8 @@
 import React from 'react';
-import { fetchPost } from '../actions';
+import { fetchPost } from '../../actions';
 import { connect } from 'react-redux';
 import { Container, Card } from 'react-bootstrap';
-import CommentSection from './CommentSection';
+import CommentSection from '../comments/CommentSection';
 
 
 
