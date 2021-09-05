@@ -13,6 +13,13 @@
       "post": "Greetings.\nI remember when I was working on a recent personal project of mine (Hop Centricity) and I was running into some frustrating issues while working with console logging. I was trying to debug a new feature I had made and wanted to see what the state was doing after certain events had occurred. I got really frustrated because I could see that some of the functionality was working correctly, but the console logs were telling me conflicting information.\nWhat was the root of the problem? Setting state, whether it be traditionally (class based) or via hooks, is asynchronous.\nI’m going to show you the two simple ways to console log state change in React for class based and functional components.\nLets start with functional. Here is an example of what not to do.\n",
       "userName": "able shalawa",
       "id": 5
+    },
+    {
+      "title": "hi",
+      "description": "hi",
+      "post": "hi",
+      "userName": "ko oluwa",
+      "id": 6
     }
   ],
   "comments": [
@@ -29,6 +36,13 @@
       "url": "https://theblog-react-app.herokuapp.com/post/4",
       "userName": "able shalawa",
       "id": 8
+    },
+    {
+      "time": "9/5/2021, 6:37:36 PM",
+      "comment": "hello",
+      "url": "/post/4",
+      "userName": "ko oluwa",
+      "id": 9
     }
   ]
 }

@@ -7,7 +7,7 @@ import ListOfComments from './ListOfComments';
 
 
 class CommentSection extends React.Component {
-	state = { time : new Date().toLocaleString(), comment: "", url: window.location.href}
+	state = { time : new Date().toLocaleString(), comment: "", url: window.location.pathname}
 
 	
 	handleFormSubmit = (time, comment, url) => {

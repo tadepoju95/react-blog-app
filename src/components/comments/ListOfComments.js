@@ -16,7 +16,7 @@ class ListOfComments extends React.Component {
 	renderList () {
 		if (this.props.isSignedIn) {
 		return this.props.comments.filter((eachComment) => {
-			return window.location.href === eachComment.url
+			return window.location.pathname === eachComment.url
 		}).map((eachComment, index) => {
 			return (
 				<div key={eachComment.id}>
