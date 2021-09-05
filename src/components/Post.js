@@ -1,7 +1,8 @@
 import React from 'react';
 import { fetchPost } from '../actions';
 import { connect } from 'react-redux';
-import { Container, Card } from 'react-bootstrap'
+import { Container, Card } from 'react-bootstrap';
+import CommentSection from './CommentSection';
 
 
 
@@ -16,7 +17,8 @@ class Post extends React.Component {
 		return (
 			<section>
       			<article className="post">
-       				<h2>{this.props.post.title}</h2>
+       				<h1>{this.props.post.title}</h1>
+       				<h4 className="author">By: {this.props.post.userName}</h4>
         			<p className="post-content">{this.props.post.post}</p>
       			</article>
     		</section>
@@ -29,6 +31,7 @@ class Post extends React.Component {
 		return (
 			<div>
 				<div>{this.renderList()}</div>
+				<CommentSection  />
 			</div>
 		)
 	}

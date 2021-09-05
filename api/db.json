@@ -1,46 +1,83 @@
 {
   "posts": [
     {
-      "title": "hi",
-      "author": "tim",
-      "description": "work",
-      "post": "blah blah blah...",
-      "userId": "106827563549481231909",
-      "id": 1
-    },
-    {
-      "title": "the",
-      "author": "the",
-      "description": "While it’s not exactly square, recall that in Big O, we’re not interested in the details. So we drop the constants and multiply the terms with a result of n^2.",
-      "post": "the",
-      "userId": "106827563549481231909",
-      "id": 2
-    },
-    {
-      "title": "well",
-      "author": "well",
-      "description": "While it’s not exactly square, recall that in Big O, we’re not interested in the details. ",
-      "post": "blah blah",
-      "userId": "106827563549481231909",
-      "id": 3
-    },
-    {
-      "title": "the big notation. data structure and algorithms. traditional",
-      "author": "the",
-      "description": "While it’s not exactly square, recall that in Big O, we’re not interested in the details.",
-      "post": "blah b...",
-      "userId": "106827563549481231909",
+      "title": "notation",
+      "description": "notation",
+      "post": "Accessing Properties on an Object There are two ways to access properties on an object: Dot Notation Bracket Notation Dot notation is used most frequently. Below we’ll dive into each and discover some of the differences. Dot Notation Lets first look at Dot notation. Consider this example below: let obj = { cat: 'meow', dog: 'woof' }; let sound = obj.cat; console.log(sound); // meow I want to bring your attention to the fifth line where we’re using dot notation: let sound = obj.cat;. This is an example of dot notation. You can access properties on an object by specifying the name of the object, followed by a dot (period) followed by the property name. This is the syntax: objectName.propertyName;. When working with dot notation, property identifies can only be alphanumeric (and _ and $). Properties can’t start with a number. Dot notation is much easier to read than bracket notation and is therefor used more often. However, there’s a second way to access properties on an object you should be aware of. It’s called bracket notation. Bracket Notation Here’s an example of bracket notation:",
+      "userName": "ko oluwa",
       "id": 4
     },
     {
-      "title": "JavaScript Quickie— Dot Notation vs. Bracket Notation",
-      "author": "Brad",
-      "description": "What’s the difference? When is each useful? Learn the details in 3 minutes",
-      "post": "Accessing Properties on an Object\nThere are two ways to access properties on an object:\nDot Notation\nBracket Notation\nDot notation is used most frequently. Below we’ll dive into each and discover some of the differences.\nDot Notation\nLets first look at Dot notation. Consider this example below:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj.cat;\nconsole.log(sound);\n// meow\nI want to bring your attention to the fifth line where we’re using dot notation: let sound = obj.cat;. This is an example of dot notation. You can access properties on an object by specifying the name of the object, followed by a dot (period) followed by the property name. This is the syntax: objectName.propertyName;.\nWhen working with dot notation, property identifies can only be alphanumeric (and _ and $). Properties can’t start with a number.\nDot notation is much easier to read than bracket notation and is therefor used more often. However, there’s a second way to access properties on an object you should be aware of. It’s called bracket notation.\nBracket Notation\nHere’s an example of bracket notation:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet sound = obj['cat'];\nconsole.log(sound);\n// meow\nAgain, draw your attention to the fifth line: let sound = obj[‘cat’];. You can access properties on an object by specifying the name of the object followed by the property name in brackets. Here’s the syntax: objectName[\"propertyName\"].\nYou’ve probably seen bracket notation when working with Arrays. In the below example we’ll access the second element in our arr by using the syntax: arrayName[element]\nlet arr = ['a','b','c'];\nlet letter = arr[1];\nconsole.log(letter);\n// b\nBut bracket notation is also useful when working with Objects.\nWhen working with bracket notation, property identifiers only have to be a String. They can include any characters, including spaces. Variables may also be used as long as the variable resolves to a String.\nThis means there are fewer limitations when working with bracket notation. We can now have spaces in our strings, and can even start strings with numbers.\nPerhaps most importantly, we can now use variables to access properties in an object. It’s important the variable you are using references a String.\nTake a look at this variable example. It might be a little confusing at first, so bear with me:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet dog = 'cat';\nlet sound = obj[dog];\nconsole.log(sound);\n// meow\nThe above example is similar to a previous example we’ve already seen. The main difference is we’re now using bracket notation to pass in a variable. Be careful, it may look like we are looking for the dog property in our obj, but that’s not entire correct. dog is a variable with a value of 'cat'. Since we’re using brackets, the string value is passed in and we search for the 'cat' property — obj[\"cat\"]. Thus, meow is logged to the console.\nBelow, we’ll try doing the same thing, but with dot notation:\nlet obj = {\n  cat: 'meow',\n  dog: 'woof'\n};\nlet dog = 'cat';\nlet sound = obj.dog;\nconsole.log(sound);\n// woof\nRight off the bat you should notice that we’re getting back woof. This is very different from the other example and it’s because we can’t use variables with dot notation. Attempting to lookup obj.dog will actually just look for the string value of 'dog' within our object instead of using the variables value. Thus, obj.dog returns woof.",
-      "userId": "106827563549481231909",
+      "title": "How to Properly Log State Change in React",
+      "description": "I’m going to show you the two simple ways to console log state change in React for class based and functional components.",
+      "post": "Greetings.\nI remember when I was working on a recent personal project of mine (Hop Centricity) and I was running into some frustrating issues while working with console logging. I was trying to debug a new feature I had made and wanted to see what the state was doing after certain events had occurred. I got really frustrated because I could see that some of the functionality was working correctly, but the console logs were telling me conflicting information.\nWhat was the root of the problem? Setting state, whether it be traditionally (class based) or via hooks, is asynchronous.\nI’m going to show you the two simple ways to console log state change in React for class based and functional components.\nLets start with functional. Here is an example of what not to do.\n",
+      "userName": "able shalawa",
       "id": 5
+    },
+    {
+      "title": "ok ",
+      "description": "ok",
+      "post": "ok",
+      "userName": "able shalawa",
+      "id": 6
     }
   ],
-  "comments": [],
-  "profile": {}
+  "comments": [
+    {
+      "time": "9/4/2021, 11:08:52 PM",
+      "comment": "awesome article. thank you so much for explaining. I was having a hard time understanding and this article cleared things up for me. ",
+      "url": "http://localhost:3000/post/4",
+      "userName": "able shalawa",
+      "id": 7
+    },
+    {
+      "time": "9/4/2021, 11:13:30 PM",
+      "comment": "yay for this article!!",
+      "url": "http://localhost:3000/post/1",
+      "userName": "able shalawa",
+      "id": 8
+    },
+    {
+      "time": "9/4/2021, 11:23:11 PM",
+      "comment": "thank you so much for this article!!",
+      "url": "http://localhost:3000/post/5",
+      "userName": "ko oluwa",
+      "id": 9
+    },
+    {
+      "time": "9/4/2021, 11:26:02 PM",
+      "comment": "hi",
+      "url": "http://localhost:3000/post/4",
+      "userName": "able shalawa",
+      "id": 10
+    },
+    {
+      "time": "9/4/2021, 11:23:11 PM",
+      "comment": "hello",
+      "url": "http://localhost:3000/post/5",
+      "userName": "ko oluwa",
+      "id": 11
+    },
+    {
+      "time": "9/4/2021, 11:28:00 PM",
+      "comment": "whatever",
+      "url": "http://localhost:3000/post/6",
+      "userName": "ko oluwa",
+      "id": 12
+    },
+    {
+      "time": "9/4/2021, 11:39:08 PM",
+      "comment": "notation",
+      "url": "http://localhost:3000/post/4",
+      "userName": "ko oluwa",
+      "id": 13
+    },
+    {
+      "time": "9/4/2021, 11:41:22 PM",
+      "comment": "ok",
+      "url": "http://localhost:3000/post/4",
+      "userName": "able shalawa",
+      "id": 14
+    }
+  ]
 }

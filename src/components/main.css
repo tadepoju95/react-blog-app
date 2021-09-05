@@ -50,10 +50,41 @@ body, html {
 	line-height: 2.0;
 	text-align: justify;
 	margin: 15px 0;
+	padding: 10px 50px 20px;
+	text-indent: 50px;
 }
 
 .post {
 	text-align: center;
 }
 
+.author {
+	text-align: left;
+	margin: 15px 105px;
+	font-weight: bold;
+	font-style: italic;
+}
 
+.comment {
+	padding: 10px 80px 20px;
+}
+
+.comment-section {
+	margin: 50px 105px;
+}
+
+.user-icon {
+	font-size: 50px;
+}
+
+.user-name {
+	
+}
+
+.user-comment {
+	text-indent: 50px;
+}
+
+.user-time {
+	font-size: 11px;
+}

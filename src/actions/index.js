@@ -1,10 +1,10 @@
 import postList from '../apis/postList';
 
 
-export const signIn = userId => {
+export const signIn = userName => {
   return {
     type: 'SIGN_IN',
-    payload: userId 
+    payload: userName
   };
 };
 
@@ -14,9 +14,11 @@ export const signOut = () => {
   };
 };
 
-export const createPost = (title, author, description, post) => async (dispatch, getState) => {
-	const { userId } = getState().auth;
-	const response = await postList.post('/posts', { title, author, description, post, userId });
+
+
+export const createPost = (title, description, post) => async (dispatch, getState) => {
+	const { userName } = getState().auth;
+	const response = await postList.post('/posts', { title, description, post, userName });
 
 	dispatch({ type: 'CREATE_POST', payload: response.data });
 };
@@ -32,3 +34,16 @@ export const fetchPost = id => async dispatch => {
 
   dispatch({ type: 'FETCH_POST', payload: response.data });
 };
+
+export const createComment = (time, comment, url) => async (dispatch, getState) => {
+  const { userName } = getState().auth;
+  const response = await postList.post('/comments', { time, comment, url, userName });
+
+  dispatch({ type: 'CREATE_COMMENT', payload: response.data });
+};
+
+export const fetchComments = () => async dispatch => {
+  const response = await postList.get('/comments');
+
+  dispatch({ type: 'FETCH_COMMENTS', payload: response.data});
+}
