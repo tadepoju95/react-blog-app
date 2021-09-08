@@ -77,14 +77,18 @@ body, html {
 	font-size: 50px;
 }
 
-.user-name {
-	
-}
-
 .user-comment {
-	text-indent: 50px;
+	text-indent: 65px;
 }
 
 .user-time {
 	font-size: 11px;
+}
+
+.nav-bar {
+	margin-left: 15px;
+}
+
+.user-name {
+	margin-left: 15px;
 }

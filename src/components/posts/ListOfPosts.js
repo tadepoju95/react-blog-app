@@ -18,7 +18,7 @@ class ListOfPosts extends React.Component {
 		return this.props.posts.map((eachPost, index) => {
 			return (
 				<Link to={`/post/${eachPost.id}`} key={eachPost.id}>
-					<Card border="dark" style={{ width: '18rem' }} className="card-post">
+					<Card border="dark" style={{ width: '18rem', height: '10rem', overflowY: 'scroll' }} className="card-post">
 	   					<Card.Body>
 	      					<Card.Title>{eachPost.title}</Card.Title>
 	      					<Card.Text>{eachPost.description}</Card.Text>
@@ -34,7 +34,7 @@ class ListOfPosts extends React.Component {
 		console.log(this.props.posts);
 		return (
 			<div>
-				<div>{this.renderList()}</div>
+				<div className={'d-flex justify-content-center flex-wrap'}>{this.renderList()}</div>
 			</div>
 		)
 	}

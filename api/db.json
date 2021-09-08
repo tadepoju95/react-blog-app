@@ -20,29 +20,43 @@
       "post": "hi",
       "userName": "ko oluwa",
       "id": 6
-    }
-  ],
-  "comments": [
+    },
     {
-      "time": "9/4/2021, 11:08:52 PM",
-      "comment": "awesome article. thank you so much for explaining. I was having a hard time understanding and this article cleared things up for me. ",
-      "url": "http://localhost:3000/post/4",
-      "userName": "able shalawa",
+      "title": "test",
+      "description": "test",
+      "post": "test",
+      "userName": "ko oluwa",
       "id": 7
     },
     {
-      "time": "9/5/2021, 5:42:15 PM",
-      "comment": "what is now?",
-      "url": "https://theblog-react-app.herokuapp.com/post/4",
-      "userName": "able shalawa",
+      "title": "ok",
+      "description": "ok",
+      "post": "ok",
+      "userName": "ko oluwa",
       "id": 8
-    },
+    }
+  ],
+  "comments": [
     {
       "time": "9/5/2021, 6:37:36 PM",
       "comment": "hello",
       "url": "/post/4",
       "userName": "ko oluwa",
       "id": 9
+    },
+    {
+      "time": "9/5/2021, 6:43:08 PM",
+      "comment": "great article!!",
+      "url": "/post/4",
+      "userName": "able shalawa",
+      "id": 10
+    },
+    {
+      "time": "9/5/2021, 6:49:47 PM",
+      "comment": "yay!! makes so much sense.",
+      "url": "/post/5",
+      "userName": "ko oluwa",
+      "id": 11
     }
   ]
 }

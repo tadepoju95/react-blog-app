@@ -4,6 +4,8 @@ import { Container, Nav } from 'react-bootstrap'
 import GoogleAuth from './GoogleAuth';
 import { ImBlogger } from 'react-icons/im';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+
 
 
 
@@ -22,10 +24,10 @@ class Header extends React.Component {
 				<Container fluid>
 					<Nav variant="tabs" defaultActiveKey="/">
   						<Nav.Item>
-    						<Nav.Link href="/" className="color">Home</Nav.Link>
+    						<NavLink to="/" className="color">Home</NavLink>
   						</Nav.Item>
   						<Nav.Item>
-   							 <Nav.Link href="/posts" className="color">Posts</Nav.Link>
+   							 <NavLink to="/posts" className="color nav-bar">Posts</NavLink>
   						</Nav.Item>
 					</Nav>
 				</Container>
